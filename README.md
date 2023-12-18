@@ -40,20 +40,8 @@ Switch ON the main switch
 If the output is 1, then the led glows.
 ### Program:
 
-HALFSUBTRACTOR:
-module halfsubtractor(a,b,diff,borrow);
-input a,b;
-output diff,borrow;
-assign diff=a^b;
-assign borrow=~a&b;
-endmodule
-FULLSUBTRACTOR:
-module fullsubtractor(a,b,c,diff,borrow);
-input a,b,c;
-output diff,borrow;
-assign diff=a^b^c;
-assign borrow=~a&b|c&~(a^b);
-endmodule
+![Screenshot 2023-12-18 154007](https://github.com/sarishvarshan/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/152167665/fa305a74-686b-4c12-a877-8c2e0043e65d)
+
 ## Logic symbol:
 ![Screenshot 2023-12-18 153515](https://github.com/sarishvarshan/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/152167665/a967fdcb-2f7e-4412-8ac9-a0c17c013508)
 
